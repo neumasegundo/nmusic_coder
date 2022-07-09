@@ -1,0 +1,107 @@
+/* se le da el reset a la pagina */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* color de fondo al body y est en link con  todos los html */
+
+body {
+    background-color: #58bbe5;
+}
+
+
+/* formato de imagen de fondo en el navegador */
+
+.header__navbar {
+    background-color: #005073;
+    background-image: url("../assets/imeg/pentagrama.png");
+    padding: 10rem;
+}
+
+
+/* la lista desordenada se le da la centarlidad */
+
+.header__navbar ul {
+    list-style-type: none;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* la lista es puesta en linea  */
+
+.header__navbar li {
+    display: inline-block;
+    padding-inline: 10px;
+    margin: 10px;
+}
+
+
+/* aqui se le da el tipo de color a la letra y quitarle el formato con el que venia y hacerla en mayusculas */
+
+.header__navbar a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(246, 255, 0);
+}
+
+
+/* se le da color al titulo y centralidad en todos los titulos de html*/
+
+.contenido__titulo {
+    color: rgb(251, 255, 3);
+    text-align: center;
+}
+
+
+/* se le da formato al contenido de todo los html que esten en link*/
+
+.contenido {
+    line-height: 1.6;
+    font-size: 20px;
+    color: white;
+    font-family: 'roboto', sans-serif;
+    margin: 2rem;
+    text-align: justify;
+}
+
+
+/* flex */
+
+.caja_padre {
+    display: flex;
+    justify-content: center;
+    margin: 5rem 5rem 1rem 5rem;
+}
+
+.caja_padre2 {
+    display: flex;
+    justify-content: center;
+}
+
+.caja img {
+    width: 300px;
+    height: 200px;
+    padding: 1rem;
+    margin: 5px;
+    border: solid .5px rgb(101, 101, 101);
+    background-color: white;
+}
+
+.texto {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+/* se le da formato al pie de pagina  y esta en link con todos los html*/
+
+.pie {
+    background-color: rgb(216, 216, 216);
+    padding: 5rem;
+    margin-top: 30rem;
+    text-align: center;
+}
