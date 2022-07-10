@@ -6,10 +6,23 @@
 }
 
 
+/* Sección de estilos moviles responsive */
+
+@media(min-width: 546px) {
+    body {
+        background-color: antiquewhite;
+    }
+}
+
+
+/* -------------------------------------------------------- */
+
+
 /* color de fondo al body y est en link con  todos los html */
 
 body {
-    background-color: #58bbe5;
+    background-color: #005173;
+    /* #58bbe5 */
 }
 
 
@@ -17,7 +30,7 @@ body {
 
 .header__navbar {
     background-color: #005073;
-    background-image: url("../assets/imeg/pentagrama.png");
+    background-image: url("../assets/imeg/nav.jpg");
     padding: 10rem;
 }
 
@@ -26,7 +39,7 @@ body {
 
 .header__navbar ul {
     list-style-type: none;
-    text-align: right;
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -45,7 +58,7 @@ body {
 .header__navbar a {
     text-decoration: none;
     text-transform: uppercase;
-    color: rgb(246, 255, 0);
+    color: rgb(255, 255, 255);
 }
 
 
@@ -69,7 +82,7 @@ body {
 }
 
 
-/* flex */
+/* aplicación de flexvox */
 
 .caja_padre {
     display: flex;
@@ -104,4 +117,22 @@ body {
     padding: 5rem;
     margin-top: 30rem;
     text-align: center;
+}
+
+
+/* aplicacion de girlla en html de galeria */
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 80px 100px;
+    grid-gap: 100px;
+    grid-auto-rows: minmax(100px, auto);
+    align-content: center;
+    padding: 100px;
+}
+
+.contenedor img {
+    width: 300px;
+    height: 200px;
 }
