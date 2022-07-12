@@ -6,15 +6,6 @@
 }
 
 
-/* Sección de estilos moviles responsive */
-
-@media(min-width: 546px) {
-    body {
-        background-color: antiquewhite;
-    }
-}
-
-
 /* -------------------------------------------------------- */
 
 
@@ -67,6 +58,7 @@ body {
 .contenido__titulo {
     color: rgb(251, 255, 3);
     text-align: center;
+    padding: 20px 0px;
 }
 
 
@@ -125,14 +117,46 @@ body {
 .contenedor {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 80px 100px;
-    grid-gap: 100px;
-    grid-auto-rows: minmax(100px, auto);
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
     align-content: center;
-    padding: 100px;
+    padding: 10px;
 }
 
 .contenedor img {
-    width: 300px;
-    height: 200px;
+    width: 100%;
+}
+
+
+/*  Mobile */
+
+@media all and (max-width: 480px) {}
+
+
+/* bobile para celulares grandes */
+
+@media (max-width: 767px) {
+    .contenedor {
+        gap: 30px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        padding: 30px;
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+
+/*  para escritorio */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .contenedor {
+        /* display: grid; */
+        gap: 30px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        padding: 30px;
+        align-items: center;
+        justify-items: center;
+    }
 }
