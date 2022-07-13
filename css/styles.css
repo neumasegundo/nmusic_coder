@@ -12,7 +12,8 @@
 /* color de fondo al body y est en link con  todos los html */
 
 body {
-    background-color: #005173;
+    background-image: linear-gradient(135deg, rgb(0, 113, 235) 30%, rgb(20, 212, 216) 100%)
+    /* #005173 */
     /* #58bbe5 */
 }
 
@@ -20,10 +21,19 @@ body {
 /* formato de imagen de fondo en el navegador */
 
 .header__navbar {
-    background-color: #005073;
-    background-image: url("../assets/imeg/nav.jpg");
-    padding: 10rem;
+    background-color: #f9f9f9;
+    background-image: url("../assets/imeg/bucle.png");
+    /* url(../assets/imeg/logo.png); */
+    padding: 100px;
+    background-position: 200% center;
 }
+
+
+/* .logo {
+    background-image: url(../assets/imeg/logo.png);
+    display: flex;
+    background-position: top right;
+} */
 
 
 /* la lista desordenada se le da la centarlidad */
@@ -77,28 +87,34 @@ body {
 /* aplicación de flexvox */
 
 .caja_padre {
-    display: flex;
-    justify-content: center;
-    margin: 5rem 5rem 1rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+    align-content: center;
+    padding: 10px;
+    justify-items: center;
 }
 
-.caja_padre2 {
+
+/* .caja_padre2 {
     display: flex;
     justify-content: center;
-}
+} */
 
 .caja img {
     width: 300px;
     height: 200px;
     padding: 1rem;
     margin: 5px;
-    border: solid .5px rgb(101, 101, 101);
-    background-color: white;
+    /* border: solid .5px rgb(101, 101, 101); */
+    /* background-color: #732200; */
 }
 
 .texto {
     text-align: center;
     font-size: 20px;
+    color: rgb(9, 255, 0);
 }
 
 
@@ -116,15 +132,20 @@ body {
 
 .contenedor {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 4fr);
     grid-template-rows: auto;
-    grid-column-gap: 10px;
-    align-content: center;
-    padding: 10px;
+    /* grid-column-gap: 0px; */
+    /* align-content: center; */
+    /* padding: 0px; */
+    justify-items: center;
 }
 
 .contenedor img {
-    width: 100%;
+    width: 400px;
+    height: 300px;
+    padding: 1rem;
+    margin: 5px;
+    /* width: 100%; */
 }
 
 
@@ -147,6 +168,21 @@ body {
         align-items: center;
         justify-items: center;
     }
+    .header__navbar li {
+        display: grid;
+        padding-inline: 10px;
+        margin: 10px;
+    }
+    .header__navbar a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+    }
+    .header__navbar {
+        background-image: url("../assets/imeg/bucle.png");
+        padding: 100px;
+        background-position: 100% center;
+    }
 }
 
 
@@ -161,5 +197,79 @@ body {
         padding: 30px;
         align-items: center;
         justify-items: center;
+    }
+    .header__navbar li {
+        display: grid;
+        padding-inline: 10px;
+        margin: 10px;
+    }
+    .header__navbar a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+    }
+    .header__navbar {
+        background-image: url("../assets/imeg/bucle.png");
+        padding: 100px;
+        background-position: 100% center;
+    }
+}
+
+
+/* celulares grandes de inico */
+
+@media (max-width: 767px) {
+    .caja_padre {
+        gap: 30px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        padding: 30px;
+        align-items: center;
+        justify-items: center;
+    }
+    .header__navbar li {
+        display: grid;
+        padding-inline: 10px;
+        margin: 10px;
+    }
+    .header__navbar a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+    }
+    .header__navbar {
+        background-image: url("../assets/imeg/bucle.png");
+        padding: 100px;
+        background-position: 100% center;
+    }
+}
+
+
+/* para escritorio em inico  */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .caja_padre {
+        /* display: grid; */
+        gap: 30px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        padding: 30px;
+        align-items: center;
+        justify-items: center;
+    }
+    .header__navbar li {
+        display: grid;
+        padding-inline: 10px;
+        margin: 10px;
+    }
+    .header__navbar a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+    }
+    .header__navbar {
+        background-image: url("../assets/imeg/bucle.png");
+        padding: 100px;
+        background-position: 100% center;
     }
 }
