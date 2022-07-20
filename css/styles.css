@@ -21,11 +21,11 @@ body {
 /* formato de imagen de fondo en el navegador */
 
 .header__navbar {
-    background-color: #f9f9f9;
-    background-image: url("../assets/imeg/bucle.png");
+    background-color: #e8ff18;
+    /* background-image: url("../assets/imeg/bucle.png"); */
     /* url(../assets/imeg/logo.png); */
-    padding: 100px;
-    background-position: 200% center;
+    /* padding: 100px;
+    background-position: 200% center; */
 }
 
 
@@ -38,29 +38,32 @@ body {
 
 /* la lista desordenada se le da la centarlidad */
 
-.header__navbar ul {
+
+/* .header__navbar ul {
     list-style-type: none;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
 
 /* la lista es puesta en linea  */
 
-.header__navbar li {
+
+/* .header__navbar li {
     display: inline-block;
     padding-inline: 10px;
     margin: 10px;
-}
+} */
 
 
 /* aqui se le da el tipo de color a la letra y quitarle el formato con el que venia y hacerla en mayusculas */
 
-.header__navbar a {
+
+/* .header__navbar a {
     text-decoration: none;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
-}
+} */
 
 
 /* se le da color al titulo y centralidad en todos los titulos de html*/
@@ -132,20 +135,19 @@ body {
 
 .contenedor {
     display: grid;
-    grid-template-columns: repeat(2, 4fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    /* grid-column-gap: 0px; */
-    /* align-content: center; */
-    /* padding: 0px; */
+    grid-column-gap: 10px;
+    align-content: center;
+    /* padding: 10px; */
     justify-items: center;
 }
 
 .contenedor img {
-    width: 400px;
-    height: 300px;
-    padding: 1rem;
-    margin: 5px;
-    /* width: 100%; */
+    width: 300px;
+    height: 200px;
+    /* padding: 1rem; */
+    /* margin: 5px; */
 }
 
 
@@ -160,6 +162,9 @@ body {
 /* bobile para celulares grandes */
 
 @media (max-width: 767px) {
+    .body {
+        background-color: aqua;
+    }
     .contenedor {
         gap: 30px;
         grid-template-columns: repeat(1, 1fr);
@@ -218,7 +223,8 @@ body {
 
 /* celulares grandes de inico */
 
-@media (max-width: 767px) {
+
+/* @media (max-width: 767px) {
     .caja_padre {
         gap: 30px;
         grid-template-columns: repeat(1, 1fr);
@@ -243,13 +249,14 @@ body {
         background-position: 100% center;
     }
 }
+ */
 
 
 /* para escritorio em inico  */
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+/* @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .caja_padre {
-        /* display: grid; */
         gap: 30px;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(5, 1fr);
@@ -272,4 +279,4 @@ body {
         padding: 100px;
         background-position: 100% center;
     }
-}
+} */
