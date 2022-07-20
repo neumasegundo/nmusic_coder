@@ -5,26 +5,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../css/styles.css">
     <title>Galeria</title>
 
 </head>
 
 <body>
-
-    <!-- El Cabezal donde se encuentra el Menu principal -->
     <header>
-        <!-- Es donde se inserta el menu de el contenido para navegar sobre de ella -->
-        <nav class="header__navbar">
-            <!-- se crea la lista desordenada del menu -->
-            <ul class="nav__links">
-                <li><a href="../index.html">inicio</a></li>
-                <li><a href="./galeria.html">Galeria</a></li>
-                <li><a href="./cursos.html">Cursos</a></li>
-                <li><a href="./nosotros.html">Contactos</a></li>
-                <li><a href="./entrar.html">Entrar</a></li>
-            </ul>
+
+        <nav class="navbar navbar-expand-lg header__navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./views/cursos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Cursos
+                        </a>
+                            <!-- <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Bateria</a></li>
+                            <li><a class="dropdown-item" href="#">Bajo</a></li>
+                            <li><a class="dropdown-item" href="#">Guitarra E.</a></li>
+                            <li><a class="dropdown-item" href="#">Teclado</a></li>
+                            <li><a class="dropdown-item" href="#">canto</a></li>
+                            <li>
+                                
+                            </ul> -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./views/galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./views/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./views/entrar.html">Log in</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
         </nav>
+
+        <!-- El Cabezal donde se encuentra el Menu principal -->
+        <!-- <header> -->
+        <!-- Es donde se inserta el menu de el contenido para navegar sobre de ella -->
+        <!-- <nav class="header__navbar"> -->
+        <!-- se crea la lista desordenada del menu -->
+        <!-- <ul class="nav__links">
+                    <li><a href="../index.html">inicio</a></li>
+                    <li><a href="./galeria.html">Galeria</a></li>
+                    <li><a href="./cursos.html">Cursos</a></li>
+                    <li><a href="./nosotros.html">Contactos</a></li>
+                    <li><a href="./entrar.html">Entrar</a></li>
+                </ul>
+            </nav>
+        </header> -->
     </header>
 
     <!-- inicia La parte principal de main  de la pagina  -->
@@ -73,15 +119,17 @@
     </main>
 
 
+
+    <!-- Esta sección es contenedor de pie de pagina se dio formato con un color y la letras centradas  -->
+    <footer class="pie">
+
+        <p>
+            Derechos reservados (pie)
+        </p>
+
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
-
-<!-- Esta sección es contenedor de pie de pagina se dio formato con un color y la letras centradas  -->
-<footer class="pie">
-
-    <p>
-        Derechos reservados (pie)
-    </p>
-
-</footer>
 
 </html>
